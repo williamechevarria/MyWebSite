@@ -158,7 +158,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2024 William Echevarria. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> William Echevarria. All rights reserved.</p>
 </footer>
 
 <div class="tracker" id="tracker"></div>
@@ -169,6 +169,7 @@
         tracker.style.left = `${event.clientX}px`;
         tracker.style.top = `${event.clientY}px`;
     });
+    document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
