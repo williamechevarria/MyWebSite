@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Echevarria - Portfolio</title>
     <style>
+        /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -13,11 +14,15 @@
             color: #fff;
             overflow-x: hidden;
         }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        /* Header */
         header {
             text-align: center;
             padding: 50px 0;
             background: #333;
-            position: relative;
         }
         header h1 {
             font-size: 3em;
@@ -26,26 +31,29 @@
         header p {
             font-size: 1.2em;
         }
+        /* Navigation */
         nav {
             display: flex;
             justify-content: center;
             background: #444;
             padding: 10px 0;
+            flex-wrap: wrap;
         }
         nav a {
             color: #fff;
             padding: 14px 20px;
-            text-decoration: none;
             transition: background 0.3s;
         }
         nav a:hover {
             background: #555;
         }
+        /* Container */
         .container {
             max-width: 1200px;
             margin: auto;
             padding: 0 20px;
         }
+        /* Sections */
         .section {
             padding: 60px 0;
         }
@@ -54,6 +62,7 @@
             margin-bottom: 40px;
             font-size: 2.5em;
         }
+        /* Cards */
         .profile-card {
             display: flex;
             justify-content: space-around;
@@ -65,8 +74,8 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            flex: 1 1 30%;
-            max-width: 30%;
+            flex: 1 1 calc(33% - 40px);
+            max-width: calc(33% - 40px);
             transition: transform 0.3s;
         }
         .profile-card .card:hover {
@@ -80,22 +89,23 @@
             text-align: center;
             margin: 20px 0;
         }
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px 0;
             background: #333;
-            position: relative;
         }
-        .tracker {
-            position: fixed;
-            width: 15px;
-            height: 15px;
-            background: #f00;
-            border-radius: 50%;
-            pointer-events: none;
-            transition: all 0.1s;
+        /* Media Queries */
+        @media(max-width: 992px) {
+            .profile-card .card {
+                flex: 1 1 calc(45% - 40px);
+                max-width: calc(45% - 40px);
+            }
         }
         @media(max-width: 768px) {
+            nav a {
+                padding: 10px 15px;
+            }
             .profile-card .card {
                 flex: 1 1 100%;
                 max-width: 100%;
@@ -107,13 +117,16 @@
 
 <header>
     <h1>William Echevarria</h1>
-    <p>Individual | Professional | Investor</p>
+    <p>Education | Investments | Educator | Partners | Friends | Family</p>
 </header>
 
 <nav>
-    <a href="#individual">Individual</a>
-    <a href="#professional">Professional</a>
-    <a href="#investor">Investor</a>
+    <a href="#education">Education</a>
+    <a href="#investments">Investments</a>
+    <a href="#educator">Educator</a>
+    <a href="#partners">Partners</a>
+    <a href="#friends">Friends</a>
+    <a href="#family">Family</a>
 </nav>
 
 <div class="container">
@@ -128,42 +141,106 @@
         </div>
     </section>
 
-    <section id="professional" class="section">
-        <h2>Professional</h2>
+<div class="container">
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
         <div class="profile-card">
             <div class="card">
-                <h3>Experience</h3>
-                <p>Over 10 years in software development, specializing in full-stack development and cloud solutions.</p>
+                <h3>Academic Background</h3>
+                <p>Bachelor's degree in Computer Science from XYZ University. Master's degree in Artificial Intelligence from ABC Institute.</p>
             </div>
             <div class="card">
-                <h3>Skills</h3>
-                <p>Proficient in JavaScript, Python, and Java. Experienced with AWS, Docker, and Kubernetes.</p>
+                <h3>Certifications</h3>
+                <p>Certified AWS Solutions Architect, Google Cloud Professional Engineer, and PMP Certified.</p>
             </div>
         </div>
     </section>
 
-    <section id="investor" class="section">
-        <h2>Investor</h2>
+    <!-- Investments Section -->
+    <section id="investments" class="section">
+        <h2>Investments</h2>
         <div class="profile-card">
             <div class="card">
                 <h3>Portfolio</h3>
-                <p>Invests in technology startups, focusing on AI and blockchain innovations.</p>
+                <p>Invested in over 20 startups, focusing on fintech, healthcare, and renewable energy sectors.</p>
             </div>
             <div class="card">
-                <h3>Strategy</h3>
-                <p>Long-term investment approach with a focus on sustainable and ethical businesses.</p>
+                <h3>Philosophy</h3>
+                <p>Believes in sustainable and impactful investments that drive innovation and societal progress.</p>
             </div>
         </div>
     </section>
+
+    <!-- Educator Section -->
+    <section id="educator" class="section">
+        <h2>Educator</h2>
+        <div class="profile-card">
+            <div class="card">
+                <h3>Teaching Experience</h3>
+                <p>Adjunct professor at XYZ University, teaching courses on machine learning and data science.</p>
+            </div>
+            <div class="card">
+                <h3>Workshops</h3>
+                <p>Conducts regular workshops on emerging technologies for professionals and enthusiasts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section">
+        <h2>Partners</h2>
+        <div class="profile-card">
+            <div class="card">
+                <h3>Business Collaborations</h3>
+                <p>Collaborated with industry leaders to drive innovation and growth in various tech sectors.</p>
+            </div>
+            <div class="card">
+                <h3>Strategic Alliances</h3>
+                <p>Built strong partnerships with companies to expand market reach and share resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Friends Section -->
+    <section id="friends" class="section">
+        <h2>Friends</h2>
+        <div class="profile-card">
+            <div class="card">
+                <h3>Social Circle</h3>
+                <p>Maintains lifelong friendships and values the time spent with close friends.</p>
+            </div>
+            <div class="card">
+                <h3>Activities</h3>
+                <p>Enjoys group hiking trips, game nights, and community events with friends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Section -->
+    <section id="family" class="section">
+        <h2>Family</h2>
+        <div class="profile-card">
+            <div class="card">
+                <h3>Family Values</h3>
+                <p>Deeply values family connections and spends quality time with loved ones.</p>
+            </div>
+            <div class="card">
+                <h3>Traditions</h3>
+                <p>Participates in family traditions and gatherings, cherishing the memories created.</p>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 <footer>
     <p>&copy; <span id="year"></span> William Echevarria. All rights reserved.</p>
 </footer>
 
-<div class="tracker" id="tracker"></div>
-
 <script>
+    // Update the year automatically
     document.addEventListener('mousemove', (event) => {
         const tracker = document.getElementById('tracker');
         tracker.style.left = `${event.clientX}px`;
