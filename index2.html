@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="William Echevarria's portfolio showcasing education, investments, and teaching experience">
+    <meta name="author" content="William Echevarria">
+    <title>William Echevarria - Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #222;
+            color: #fff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        /* Skip to content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #333;
+        }
+        
+        header h1 {
+            font-size: clamp(2em, 5vw, 3em);
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: clamp(1em, 2.5vw, 1.2em);
+        }
+        
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            transition: background 0.3s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #555;
+            outline: 2px solid #fff;
+            outline-offset: -2px;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: clamp(2em, 4vw, 2.5em);
+        }
+        
+        /* Cards */
+        .profile-card {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .profile-card .card {
+            background: #444;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            flex: 1 1 calc(33% - 20px);
+            min-width: 280px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .profile-card .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.7);
+        }
+        
+        .profile-card .card img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .profile-card .card h3 {
+            text-align: center;
+            margin: 20px 0 15px;
+            font-size: 1.5em;
+        }
+        
+        .profile-card .card p {
+            text-align: center;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #333;
+            margin-top: 40px;
+        }
+        
+        /* Media Queries */
+        @media(max-width: 768px) {
+            nav a {
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+            
+            .profile-card .card {
+                flex: 1 1 100%;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+    <h1>William Echevarria</h1>
+    <p>Education | Investments | Educator | Partners | Friends | Family</p>
+</header>
+
+<nav role="navigation" aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#investments">Investments</a>
+    <a href="#educator">Educator</a>
+    <a href="#partners">Partners</a>
+    <a href="#friends">Friends</a>
+    <a href="#family">Family</a>
+</nav>
+
+<main id="main-content">
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="profile-card">
+                <div class="card">
+                    <img src="docs/assets/DALL·E 2024-05-25 03.15.22 - A graphic illustration of a man in his 40s sitting confidently on a dramatic throne made of countless swords, resembling a fantasy medieval setting. T.webp" alt="Portrait of William Echevarria">
+                    <h3>William Echevarria</h3>
+                    <p>Passionate about technology and innovation. Enjoys hiking, reading, and coding in spare time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="profile-card">
+                <div class="card">
+                    <h3>Academic Background</h3>
+                    <p>Bachelor's degree in Computer Science from XYZ University. Master's degree in Artificial Intelligence from ABC Institute.</p>
+                </div>
+                <div class="card">
+                    <h3>Certifications</h3>
+                    <p>Certified AWS Solutions Architect, Google Cloud Professional Engineer, and PMP Certified.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investments Section -->
+        <section id="investments" class="section">
+            <h2>Investments</h2>
+            <div class="profile-card">
+                <div class="card">
+                    <h3>Portfolio</h3>
+                    <p>Invested in over 20 startups, focusing on fintech, healthcare, and renewable energy sectors.</p>
+                </div>
+                <div class="card">
+                    <h3>Philosophy</h3>
+                    <p>Believes in sustainable and impactful investments that drive innovation and societal progress.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educator Section -->
+        <section id="educator" class="section">
+            <h2>Educator</h2>
+            <div class="profile-card">
+                <div class="card">
+                    <h3>Teaching Experience</h3>
+                    <p>Adjunct professor at XYZ University, teaching courses on machine learning and data science.</p>
+                </div>
+                <div class="card">
+                    <h3>Workshops</h3>
+                    <p>Conducts regular workshops on emerging technologies for professionals and enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="section">
+            <h2>Partners</h2>
+            <div class="profile-card">
+                <div class="card">
+                    <h3>Business Collaborations</h3>
+                    <p>Collaborated with industry leaders to drive innovation and growth in various tech sectors.</p>
+                </div>
+                <div class="card">
+                    <h3>Strategic Alliances</h3>
+                    <p>Built strong partnerships with companies to expand market reach and share resources.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Friends Section -->
+        <section id="friends" class="section">
+            <h2>Friends</h2>
+            <div class="profile-card">
+                <div class="card">
+                    <h3>Social Circle</h3>
+                    <p>Maintains lifelong friendships and values the time spent with close friends.</p>
+                </div>
+                <div class="card">
+                    <h3>Activities</h3>
+                    <p>Enjoys group hiking trips, game nights, and community events with friends.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Section -->
+        <section id="family" class="section">
+            <h2>Family</h2>
+            <div class="profile-card">
+                <div class="card">
+                    <h3>Family Values</h3>
+                    <p>Deeply values family connections and spends quality time with loved ones.</p>
+                </div>
+                <div class="card">
+                    <h3>Traditions</h3>
+                    <p>Participates in family traditions and gatherings, cherishing the memories created.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> William Echevarria. All rights reserved.</p>
+</footer>
+
+<script>
+    // Update the year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
